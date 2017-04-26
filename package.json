@@ -1,0 +1,37 @@
+{
+  "name": "gulp-nodemon",
+  "version": "1.0.0",
+  "description": "Gulp + nodemon + convience",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paraofheaven/gulp-nodemon.git"
+  },
+  "keywords": [
+    "Gulp",
+    "nodemon",
+    "gulp",
+    "gulpPlugin"
+  ],
+  "author": "para",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paraofheaven/gulp-nodemon/issues"
+  },
+  "homepage": "https://github.com/paraofheaven/gulp-nodemon#readme",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "event-stream": "^3.2.1",
+    "gulp": "^3.9.1",
+    "nodemon": "^1.10.2"
+  },
+  "devDependencies": {
+    "should": "^4.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^0.2.0",
+    "is-running": "^1.0.3"
+  }
+}
