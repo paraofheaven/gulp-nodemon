@@ -45,7 +45,7 @@ module.exports = function(options){
 	process.once('SIGINT', exitHandler.bind(null, {exit: true}));
 
 	script.on('log', function (log){
-		nodemonLog(log.colour);
+		nodemonLog(log.color);
 	})
 
 	script.on =function (event,tasks){
@@ -78,7 +78,7 @@ module.exports = function(options){
 	function run(tasks) {
 		if(typeof tasks === 'string') tasks = [tasks];
 		if(tasks.length === 0) return;
-		if(!(tasks instanceof Array)) throw new Error('Expected task name or array but found' + tasks);
+		if(!(tasks instanceof Array)) throw new Error('Expected task name and type must be Array' + tasks);
 		cp.spawnSync(process.platform === 'win32' ? 'gulp.cmd' : 'gulp' ,tasks, {stdio:[0,1,2]});
 	}
 }
